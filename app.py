@@ -8,10 +8,8 @@ def main():
 
 @app.route('/index')
 def index():
-    if request.method == 'GET'
-  		return render_template('index.html')
-  	else:
-  		return 'request.method was not a GET!'
+  return render_template('index.html')
+  	
 
 if __name__ == '__main__':
   app.run(port=33507)
