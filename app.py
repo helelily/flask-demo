@@ -2,9 +2,9 @@ from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
-@app.route('/')
-def main():
-  return redirect('/index')
+#@app.route('/')
+#def main():
+#  return redirect('/index')
 
 @app.route('/index', methods=['GET'])
 def index():
@@ -14,4 +14,4 @@ def index():
   		return 'request.method was not a GET!'
 
 if __name__ == '__main__':
-  app.run(port=33507, debug=True)
+  app.run(port=33507)
